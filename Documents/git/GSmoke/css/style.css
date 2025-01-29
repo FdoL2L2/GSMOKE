@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #666 !important;
 }
 header {
     background-color: #4CAF50;
@@ -45,7 +46,34 @@ nav ul li a {
     border: 1px solid #ddd;
 }
 
-footer {
+#rrss {
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 40px; /* Ajusta según la altura del footer original */
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Espaciado entre iconos */
+    border: 1px solid black;
+}
+
+/* Si usas imágenes en lugar de FontAwesome */
+#rrss img {
+    width: 30px; /* Ajusta el tamaño de los íconos */
+    height: auto;
+    transition: 0.3s;
+    
+}
+
+#rrss img:hover {
+    opacity: 0.7;
+}
+
+#footer {
     background-color: #333;
     color: white;
     text-align: center;
@@ -53,4 +81,5 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+    border: 1px solid black;
 }
